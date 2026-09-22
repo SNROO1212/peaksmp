@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&display=swap');
 
 :root {
-    --primary-red: #c0392b;
-    --primary-dark: #8b1e1a;
-    --primary-deep: #5e1210;
-    --text-light: #ffffff;
-    --text-off: #e0e0e0;
-    --bg-dark: #0a0c10;
-    --bg-card: #14171c;
-    --bg-elevated: #1a1e26;
-    --shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
-    --glow: 0 0 12px rgba(192, 57, 43, 0.4);
-    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --primary-red: #2563eb;      /* Kräftiges Peak-Blau */
+  --primary-dark: #1d4ed8;     /* Dunkleres Blau für Effekte */
+  --primary-deep: #1e3a8a;     /* Sehr dunkles Blau */
+  --text-light: #ffffff;
+  --text-off: #e0e0e0;
+  --bg-dark: #0a0c10;
+  --bg-card: #14171c;
+  --bg-elevated: #1a1e26;
+  --shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
+  --glow: 0 0 12px rgba(37, 99, 235, 0.4); /* Blauer Leuchteffekt */
+  --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 }
 
 * {
