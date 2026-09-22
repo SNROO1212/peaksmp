@@ -5,62 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEAK SMP | Team</title>
     <link rel="icon" type="image/png" href="Bilder/logo.png">
-    <link rel="stylesheet" href="/Main/style.css">
-    <script src="/Main/particles.js" defer></script>
-    <script src="/Main/scroll.js" defer></script>
-    <script src="/Main/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="particles.js" defer></script>
+    <script src="scroll.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="site-wrapper">
+        <!-- HEADER / NAVIGATION -->
         <header class="main-header">
             <div class="container header-flex">
                 <div class="logo">
-                    <img src="/Bilder/Peak logo.png" alt="PEAK SMP Logo" class="logo-img">
+                    <img src="Bilder/logo.png" alt="PEAK SMP Logo" class="logo-img">
                 </div>
                 <button class="mobile-toggle" aria-label="Menü öffnen">
                     <span></span><span></span><span></span>
                 </button>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="/Main/index.html">Startseite</a></li>
-                        <li><a href="/Seiten/team.html" class="active">Team</a></li>
-                        <li><a href="/Seiten/über.uns.html">Über uns</a></li>
-                        <li><a href="/Seiten/kontakt.html">Kontakt</a></li>
-                        <li><a href="https://discord.gg/BPkrQR4ZX9" target="_blank" class="discord-btn">Discord Server</a></li>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="team.html" class="active">Team</a></li>
+                        <li><a href="über.uns.html">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="https://discord.gg" target="_blank" class="discord-btn">Discord Server</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main>
+        <!-- MAIN CONTENT (TEAM BOXEN) -->
+        <main class="features">
             <div class="container">
-                <h1 class="page-title">Unser Team</h1>
-                <p>Soon??????</p>
-                <div class="team-roles-grid">
-                    <div class="role-block"><div class="role-title">Owner</div><ul class="member-list"><li><span class="member-name">SNRO</span></li><li><span class="member-name">xYuuichix</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Co. Owner</div><ul class="member-list"><li><span class="member-name">MaysonFK</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Team-Leitung</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">STV. Team-Leitung</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Management</div><ul class="member-list"><li><span class="member-name">qnur</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Senior - Adminstrator</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Adminstrator</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Test - Adminstrator</div><ul class="member-list"><li><span class="member-name">MACHERKATOTO</span></li><li><span class="member-name">Manu</span></li><li><span class="member-name">Tizi</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Moderator - Leitung I</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Senior - Moderator</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Moderator</div><ul class="member-list"><li><span class="member-name">Darkangel</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Supporter - Leitung</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Senior - Supporter</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Supporter</div><ul class="member-list"><li><span class="member-name">Josh</span></li><li><span class="member-name">Henri</span></li><li><span class="member-name">Bundessteuerdienst</span></li><li><span class="member-name">quix</span></li><li><span class="member-name">Ryo</span></li><li><span class="member-name">Tyxq</span></li></ul></div>                                                                                                                                                                                                                                                                                             
-                    <div class="role-block"><div class="role-title">Junior - Supporter</div><ul class="member-list"><li><span class="member-name">haqu</span></li><li><span class="member-name">Paxo</span></li><li><span class="member-name">zz_77</span></li><li><span class="member-name">zayo</span></li></ul></div>
-                    <div class="role-block"><div class="role-title">Guide</div><ul class="member-list"><li><span class="member-name">None</span></li></ul></div>
+                <h1 class="section-title">Unser Team</h1>
+                <p class="hero-subtitle" style="text-align: center; margin-bottom: 3rem;">Soon??????</p>
+                
+                <div class="feature-two-columns">
+                    <!-- LINKE SPALTE -->
+                    <div class="feature-column-left">
+                        
+                        <div class="banner-card">
+                            <div>
+                                <h3>Owner</h3>
+                                <p>• SNRO<br>• xYuuichix</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Team-Leitung</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Management</h3>
+                                <p>• qnur</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Adminstrator</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Moderator - Leitung I</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Moderator</h3>
+                                <p>• Darkangel</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Senior - Supporter</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Junior - Supporter</h3>
+                                <p>• haqu<br>• Paxo<br>• zz_77<br>• zayo</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- RECHTE SPALTE -->
+                    <div class="feature-column-right">
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Co. Owner</h3>
+                                <p>• MaysonFK</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>STV. Team-Leitung</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Senior - Adminstrator</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Test - Adminstrator</h3>
+                                <p>• MACHERKATOTO<br>• Manu<br>• Tizi</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Senior - Moderator</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Supporter - Leitung</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Supporter</h3>
+                                <p>• Josh<br>• Henri<br>• Bundessteuerdienst<br>• quix<br>• Ryo<br>• Tyxq</p>
+                            </div>
+                        </div>
+
+                        <div class="banner-card">
+                            <div>
+                                <h3>Guide</h3>
+                                <p>• None</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </main>
 
+        <!-- FOOTER -->
         <footer class="main-footer">
             <div class="container">
-                <div class="footer-privacy-box">
-                    <a href="/Seiten/datenschutz.html" class="privacy-link">Datenschutz</a>
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <a href="datenschutz.html" style="color: #ccc; text-decoration: none; transition: color 0.2s;">Datenschutz</a>
                 </div>
                 <div class="footer-flex">
                     <div class="footer-brand">
@@ -68,17 +177,15 @@
                         <span>Premium Minecraft Server</span>
                     </div>
                     <div class="footer-links">
-                        <a href="/Main/index.html">Startseite</a>
-                        <a href="/Seiten/team.html">Team</a>
-                        <a href="/Seiten/über.uns.html">Über uns</a>
-                        <a href="/Seiten/kontakt.html">Kontakt</a>
-                        <a href="https://discord.gg/deUAvXMgCp" target="_blank">Discord</a>
+                        <a href="index.html">Startseite</a>
+                        <a href="team.html">Team</a>
+                        <a href="über.uns.html">Über uns</a>
+                        <a href="kontakt.html">Kontakt</a>
+                        <a href="https://discord.gg" target="_blank">Discord</a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="container">
-                        <p>2026 PEAK SMP. Alle Rechte vorbehalten.</p>
-                    </div>
+                <div style="text-align: center; margin-top: 2rem; color: #aaa; font-size: 0.9rem;">
+                    <p>&copy; 2026 PEAK SMP. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
