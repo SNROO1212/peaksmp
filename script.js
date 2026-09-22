@@ -60,7 +60,7 @@ function showProtectionNotification() {
     if (notif) notif.remove();
     notif = document.createElement('div');
     notif.id = 'copy-protect-notification';
-    notif.textContent = 'Geschützt - Minecraft Dominion';
+    notif.textContent = 'Geschützt - PEAK SMP';
     Object.assign(notif.style, {
         position: 'fixed', bottom: '30px', left: '50%', transform: 'translateX(-50%) scale(0.9)',
         backgroundColor: '#c0392b', color: '#ffffff', padding: '14px 28px', borderRadius: '50px',
