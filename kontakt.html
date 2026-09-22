@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Dominion | Kontakt</title>
+    <link rel="icon" type="image/png" href="/Bilder/Dominion logo.png">
+    <link rel="stylesheet" href="/Main/style.css">
+    <script src="/Main/particles.js" defer></script>
+    <script src="/Main/scroll.js" defer></script>
+    <script src="/Main/script.js" defer></script>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header class="main-header">
+            <div class="container header-flex">
+                <div class="logo">
+                    <img src="/Bilder/Dominion logo.png" alt="Minecraft Dominion Logo" class="logo-img">
+                </div>
+                <button class="mobile-toggle" aria-label="Menü öffnen">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/Main/index.html">Startseite</a></li>
+                        <li><a href="/Seiten/team.html">Team</a></li>
+                        <li><a href="/Seiten/über.uns.html">Über uns</a></li>
+                        <li><a href="/Seiten/kontakt.html" class="active">Kontakt</a></li>
+                        <li><a href="https://discord.gg/BPkrQR4ZX9" target="_blank" class="discord-btn">Discord Server</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1 class="page-title">Kontakt</h1>
+                <p>Du hast Fragen oder möchtest dem Server beitreten? Schreib uns einfach.</p>
+
+                <div class="contact-buttons">
+                    <button class="btn btn-primary contact-toggle active" data-form="email">Email - Support</button>
+                    <button class="btn btn-secondary contact-toggle" data-form="discord">Discord - Support</button>
+                </div>
+
+                <div class="contact-form-container">
+                    <!-- Email-Formular (Formspree) -->
+                    <div id="email-form" class="contact-form active-form">
+                        <h2>Nachricht senden</h2>
+                        <form action="https://formspree.io/f/xkoapkjv" method="POST">
+                            <div class="form-group">
+                                <label for="email">E-Mail Adresse</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Deine Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Absenden</button>
+                        </form>
+                        <div id="email-success-message" style="margin-top: 1.5rem; display: none; text-align: center;">
+                            <p style="color: #4caf50;">Vielen Dank! Deine Nachricht wurde gesendet.</p>
+                        </div>
+                    </div>
+
+                    <!-- Discord-Formular (bisheriger Webhook) -->
+                    <div id="discord-form" class="contact-form">
+                        <h2>Discord Support</h2>
+                        <form id="discord-contact-form">
+                            <div class="form-group">
+                                <label for="subject">Dein Anliegen</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="discordname">Discord Name (Only ID + Name)</label>
+                                <input type="text" id="discordname" name="discordname" placeholder="Beispiel: Benutzer#1234" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="discordmessage">Nachricht</label>
+                                <textarea id="discordmessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Absenden</button>
+                        </form>
+                        <div id="discord-success-message" style="margin-top: 2rem; display: none; text-align: center;">
+                            <p class="success-title">Discord Support Anfrage</p>
+                            <p class="success-text">Hey Vielen Dank für dein Support Anfrage wir werden sie uns durchlesen und dein Anliegen Klären und So Schnell wir können zurück schreiben!</p>
+                            <a href="https://discord.gg/BPkrQR4ZX9" target="_blank" class="btn btn-primary animated-btn">Support beitreten</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-privacy-box">
+                    <a href="/Seiten/datenschutz.html" class="privacy-link">Datenschutz</a>
+                </div>
+                <div class="footer-flex">
+                    <div class="footer-brand">
+                        <p>Minecraft Dominion</p>
+                        <span>Premium Minecraft Server</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="/Main/index.html">Startseite</a>
+                        <a href="/Seiten/team.html">Team</a>
+                        <a href="/Seiten/über.uns.html">Über uns</a>
+                        <a href="/Seiten/kontakt.html">Kontakt</a>
+                        <a href="https://discord.gg/BPkrQR4ZX9" target="_blank">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p>2026 Minecraft Dominion. Alle Rechte vorbehalten.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        .contact-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0 2rem;
+            justify-content: center;
+        }
+        .contact-toggle {
+            cursor: pointer;
+        }
+        .contact-toggle.active {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+        }
+        .contact-toggle.btn-secondary.active {
+            background: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+        }
+        .contact-form {
+            display: none;
+        }
+        .contact-form.active-form {
+            display: block;
+        }
+        .contact-form-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .contact-form h2 {
+            margin-bottom: 2rem;
+        }
+        .contact-form .form-group {
+            margin-bottom: 2rem;
+        }
+        #discord-success-message, #email-success-message {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .success-title {
+            color: #c0392b;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .success-text {
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            color: var(--text-off);
+        }
+        .animated-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 0 rgba(192, 57, 43, 0.4);
+            animation: pulse-red 2s infinite;
+        }
+        .animated-btn:hover {
+            animation: none;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(192, 57, 43, 0.4);
+        }
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(192, 57, 43, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(192, 57, 43, 0); }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailFormDiv = document.getElementById('email-form');
+            const discordFormDiv = document.getElementById('discord-form');
+            const toggleBtns = document.querySelectorAll('.contact-toggle');
+            const discordSuccessDiv = document.getElementById('discord-success-message');
+            const emailSuccessDiv = document.getElementById('email-success-message');
+
+            let webhookURL = '';
+            fetch('/Seiten/config.json')
+                .then(res => res.json())
+                .then(config => webhookURL = config.discordWebhook)
+                .catch(err => console.error('Config Fehler:', err));
+
+            function showForm(formId) {
+                emailFormDiv.classList.remove('active-form');
+                discordFormDiv.classList.remove('active-form');
+                discordSuccessDiv.style.display = 'none';
+                emailSuccessDiv.style.display = 'none';
+                const discordFormElement = document.getElementById('discord-contact-form');
+                if (discordFormElement) discordFormElement.style.display = 'block';
+                if (formId === 'email') {
+                    emailFormDiv.classList.add('active-form');
+                } else {
+                    discordFormDiv.classList.add('active-form');
+                }
+                toggleBtns.forEach(btn => {
+                    if (btn.getAttribute('data-form') === formId) btn.classList.add('active');
+                    else btn.classList.remove('active');
+                });
+            }
+
+            toggleBtns.forEach(btn => {
+                btn.addEventListener('click', () => showForm(btn.getAttribute('data-form')));
+            });
+
+            async function sendToWebhook(type, fields) {
+                if (!webhookURL) {
+                    alert('Webhook nicht konfiguriert. Bitte später erneut versuchen.');
+                    return false;
+                }
+                const payload = {
+                    embeds: [{
+                        title: `${type} Anfrage`,
+                        color: 0xc0392b,
+                        fields: fields,
+                        timestamp: new Date().toISOString()
+                    }]
+                };
+                try {
+                    const response = await fetch(webhookURL, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    return response.ok;
+                } catch (error) {
+                    console.error(error);
+                    return false;
+                }
+            }
+
+            // Discord Formular (Webhook)
+            const discordForm = document.getElementById('discord-contact-form');
+            if (discordForm) {
+                discordForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const subject = document.getElementById('subject').value.trim();
+                    const discordname = document.getElementById('discordname').value.trim();
+                    const discordmessage = document.getElementById('discordmessage').value.trim();
+                    if (!subject || !discordname || !discordmessage) {
+                        alert('Bitte fülle alle Felder aus.');
+                        return;
+                    }
+                    const fields = [
+                        { name: "Anliegen", value: subject, inline: false },
+                        { name: "Discord Name", value: discordname, inline: true },
+                        { name: "Nachricht", value: discordmessage, inline: false }
+                    ];
+                    const success = await sendToWebhook("Discord Support", fields);
+                    if (success) {
+                        discordForm.reset();
+                        discordForm.style.display = 'none';
+                        discordSuccessDiv.style.display = 'block';
+                    } else {
+                        alert('Fehler beim Senden. Bitte später erneut versuchen.');
+                    }
+                });
+            }
+
+            // Erfolgsmeldung für Formspree (optional – da Formspree eigene Seite anzeigt)
+            const emailForm = document.querySelector('#email-form form');
+            if (emailForm) {
+                emailForm.addEventListener('submit', function() {
+                    // Erfolgsmeldung wird von Formspree nach Redirect gezeigt.
+                    // Hier nur als kleine Hilfe: Speichern, dass gesendet wurde.
+                    console.log('Formspree Formular abgesendet');
+                });
+            }
+
+            showForm('email');
+        });
+    </script>
+</body>
+</html>
