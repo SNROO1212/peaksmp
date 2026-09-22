@@ -5,56 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEAK SMP | Über uns</title>
     <link rel="icon" type="image/png" href="Bilder/logo.png">
-    <link rel="stylesheet" href="/Main/style.css">
-    <script src="/Main/particles.js" defer></script>
-    <script src="/Main/scroll.js" defer></script>
-    <script src="/Main/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="particles.js" defer></script>
+    <script src="scroll.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="site-wrapper">
+        <!-- HEADER / NAVIGATION -->
         <header class="main-header">
             <div class="container header-flex">
                 <div class="logo">
-                    <img src="/Bilder/Peak logo.png" alt="PEAK SMP Logo" class="logo-img">
+                    <img src="Bilder/logo.png" alt="PEAK SMP Logo" class="logo-img">
                 </div>
                 <button class="mobile-toggle" aria-label="Menü öffnen">
                     <span></span><span></span><span></span>
                 </button>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="/Main/index.html">Startseite</a></li>
-                        <li><a href="/Seiten/team.html">Team</a></li>
-                        <li><a href="/Seiten/über.uns.html" class="active">Über uns</a></li>
-                        <li><a href="/Seiten/kontakt.html">Kontakt</a></li>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="über.uns.html" class="active">Über uns</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
                         <li><a href="https://discord.gg/BPkrQR4ZX9" target="_blank" class="discord-btn">Discord Server</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main>
-            <div class="container">
-                <h1 class="page-title">Über PEAK SMP</h1>
-                <div class="about-content">
-                    <h2>Geschichte</h2>
-                    <p>Es gab mal 3 mutige Discord-User, die gerne mal ein Minecraft-Projekt starten wollten. Danach hatte einer die Idee: Ein Projekt, wo es um Spielspaß geht- Wir hatten dann insgesamt 3 Minecraft Projekte. Nach langer Zeit wollten wir noch ein Projekt machen, weil wir wieder ein erfolgreiches Projekt wie damals haben wollten – wo jeder Spaß hat und wo jeder um 2:00 Uhr nachts miteinander redet und zusammenarbeitet. Dank dieser Projekte haben wir wirklich viele neue Freunde gefunden.</p>
+        <!-- MAIN CONTENT -->
+        <main class="features">
+            <div class="container" style="max-width: 900px;">
+                <h1 class="section-title">Über PEAK SMP</h1>
+                
+                <!-- Große Inhaltsbox -->
+                <div class="banner-card" style="max-width: 100%; display: block; padding: 2.5rem;">
                     
-                    <h2>Unsere Mission</h2>
-                    <p>Wir wollen ein Projekt machen, bei dem jeder Spaß hat, etwas erlebt, neue Freunde entdeckt und gerne bei weiteren Projekten bei uns mitmacht.</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-red); font-size: 1.5rem; margin-bottom: 0.8rem;">Geschichte</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-off);">
+                            Es gab mal 3 mutige Discord-User, die gerne mal ein Minecraft-Projekt starten wollten. Danach hatte einer die Idee: Ein Projekt, wo es um Spielspaß geht- Wir hatten dann insgesamt 3 Minecraft Projekte. Nach langer Zeit wollten wir noch ein Projekt machen, weil wir wieder ein erfolgreiches Projekt wie damals haben wollten – wo jeder Spaß hat und wo jeder um 2:00 Uhr nachts miteinander redet und zusammenarbeitet. Dank dieser Projekte haben wir wirklich viele neue Freunde gefunden.
+                        </p>
+                    </div>
                     
-                    <h2>Idee</h2>
-                    <p>Wir wollten ein Minecraft SMP Projekt schaffen, das jeden begeistert und Spaß macht.</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-red); font-size: 1.5rem; margin-bottom: 0.8rem;">Unsere Mission</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-off);">
+                            Wir wollen ein Projekt machen, bei dem jeder Spaß hat, etwas erlebt, neue Freunde entdeckt und gerne bei weiteren Projekten bei uns mitmacht.
+                        </p>
+                    </div>
                     
-                    <h2>Ziel</h2>
-                    <p>Wir wollen, dass jeder Spaß hat, aktiv bei uns ist, an weiteren Projekten teilnimmt und ein cooles Projekt gemeinsam durchführt.</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="color: var(--primary-red); font-size: 1.5rem; margin-bottom: 0.8rem;">Idee</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-off);">
+                            Wir wollten ein Minecraft SMP Projekt schaffen, das jeden begeistert und Spaß macht.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 style="color: var(--primary-red); font-size: 1.5rem; margin-bottom: 0.8rem;">Ziel</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-off);">
+                            Wir wollen, dass jeder Spaß hat, aktiv bei uns ist, an weiteren Projekten teilnimmt und ein cooles Projekt gemeinsam durchführt.
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
         </main>
 
+        <!-- FOOTER -->
         <footer class="main-footer">
             <div class="container">
-                <div class="footer-privacy-box">
-                    <a href="/Seiten/datenschutz.html" class="privacy-link">Datenschutz</a>
+                <div style="text-align: center; margin-bottom: 1.5rem;">
+                    <a href="datenschutz.html" style="color: #ccc; text-decoration: none; transition: color 0.2s;">Datenschutz</a>
                 </div>
                 <div class="footer-flex">
                     <div class="footer-brand">
@@ -62,17 +85,15 @@
                         <span>Premium Minecraft Server</span>
                     </div>
                     <div class="footer-links">
-                        <a href="/Main/index.html">Startseite</a>
-                        <a href="/Seiten/team.html">Team</a>
-                        <a href="/Seiten/über.uns.html">Über uns</a>
-                        <a href="/Seiten/kontakt.html">Kontakt</a>
+                        <a href="index.html">Startseite</a>
+                        <a href="team.html">Team</a>
+                        <a href="über.uns.html">Über uns</a>
+                        <a href="kontakt.html">Kontakt</a>
                         <a href="https://discord.gg/BPkrQR4ZX9" target="_blank">Discord</a>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <div class="container">
-                        <p>2026 PEAK SMP Alle Rechte vorbehalten.</p>
-                    </div>
+                <div style="text-align: center; margin-top: 2rem; color: #aaa; font-size: 0.9rem;">
+                    <p>&copy; 2026 PEAK SMP Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </footer>
