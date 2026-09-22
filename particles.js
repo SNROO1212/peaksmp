@@ -21,7 +21,7 @@
     resize();
     window.addEventListener('resize', resize);
 
-    // ─── NEBEL / FOG LAYER ───────────────────────────────────────────
+    // ─── NEBEL / FOG LAYER (Jetzt dezent Blau statt Rot) ─────────────────
     const fogBlobs = [];
     const FOG_COUNT = 8;
 
@@ -32,17 +32,17 @@
             y: Math.random() * canvas.height,
             radiusX: 250 + Math.random() * 300,
             radiusY: 120 + Math.random() * 180,
-            opacity: 0.04 + Math.random() * 0.07,
+            opacity: 0.03 + Math.random() * 0.05,
             speedX: (0.12 + Math.random() * 0.18) * (Math.random() > 0.5 ? 1 : -1),
             speedY: (0.04 + Math.random() * 0.08) * (Math.random() > 0.5 ? 1 : -1),
             angle: Math.random() * Math.PI * 2,
             angleSpeed: (Math.random() * 0.002 - 0.001),
             pulseOffset: Math.random() * Math.PI * 2,
             pulseSpeed: 0.003 + Math.random() * 0.004,
-            // Deep dark red to near-black
-            r: Math.floor(40 + Math.random() * 80),
-            g: Math.floor(0 + Math.random() * 5),
-            b: Math.floor(0 + Math.random() * 5),
+            // Ein dezentes Dunkelblau für den Hintergrund-Nebel
+            r: Math.floor(10 + Math.random() * 20),
+            g: Math.floor(25 + Math.random() * 30),
+            b: Math.floor(60 + Math.random() * 80),
         };
     }
 
@@ -84,16 +84,14 @@
         }
     }
 
-    // ─── ASH PARTICLES ───────────────────────────────────────────────
+    // ─── PARTIKEL (Jetzt reines Weiß und helles Grau statt Rot) ─────────
     const ashColors = [
-        'rgba(120, 10, 10, VAL)',
-        'rgba(80, 5, 5, VAL)',
-        'rgba(160, 20, 20, VAL)',
-        'rgba(50, 2, 2, VAL)',
-        'rgba(100, 8, 8, VAL)',
-        'rgba(30, 0, 0, VAL)',
-        'rgba(180, 30, 30, VAL)',
-        'rgba(60, 4, 4, VAL)',
+        'rgba(255, 255, 255, VAL)', // Reines Weiß
+        'rgba(240, 240, 240, VAL)', // Ganz helles Grau
+        'rgba(220, 225, 235, VAL)', // Minimal bläuliches Weiß
+        'rgba(200, 200, 200, VAL)', // Helles Silber-Grau
+        'rgba(255, 255, 255, VAL)',
+        'rgba(180, 185, 195, VAL)', // Mittleres Grau für Tiefe
     ];
 
     const PARTICLE_COUNT = 160;
@@ -159,7 +157,7 @@
         ctx.save();
         ctx.translate(p.x, p.y);
         const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, p.size);
-        grad.addColorStop(0, getColor(p));
+        grad.addColorStop(0, getColor(p);
         grad.addColorStop(1, p.color.replace('VAL', '0'));
         ctx.beginPath();
         ctx.arc(0, 0, p.size, 0, Math.PI * 2);
