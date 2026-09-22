@@ -19,7 +19,7 @@ const leftFeatures = [
     },
     {
         icon: '🎥',
-        title: 'Unterhaltsame Videos',
+        title: 'Highlights',
         lines: [
             'Spannende Kriege und PvP-Highlights',
             'Hochwertiger Content aus dem Servergeschehen',
@@ -33,18 +33,18 @@ const rightFeatures = [
         icon: '👑',
         title: 'Einzigartiges Roleplay',
         lines: [
-            'Mehrere Königreiche mit eigener Kultur und Geschichte',
+            'Mehrere Clans mit eigener Ziel und Geschichte',
             'Kriege, Bündnisse, Verrat und politische Konflikte',
             'Spieler schreiben die Geschichte der Welt selbst'
         ]
     },
     {
-        icon: '⚔️',
-        title: 'Bedeutungsvolle Kämpfe',
+        icon: '🏗️',
+        title: 'Grenzenlose Kreativität',
         lines: [
-            'Könige kämpfen mit begrenzten Leben um ihr Reich',
-            'Jeder Kampf hat echte Konsequenzen',
-            'Leben gehen nur durch legitimes RP-PvP verloren'
+            'Erschaffe gigantische Mega-Projekte allein oder im Team.',
+            'Präge die Map mit monumentalen Bauwerken und Städten.',
+            'Zeige der Community dein Können als Meister-Builder.'
         ]
     },
     {
